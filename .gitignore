@@ -20,7 +20,7 @@
 
 # Logs and databases #
 ############
-*.log
+*.lo
 
 # OS generated files #
 ############
