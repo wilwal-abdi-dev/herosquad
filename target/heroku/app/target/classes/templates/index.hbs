@@ -1,0 +1,31 @@
+{{#partial "styles"}}
+    <link rel="stylesheet" href="/css/style.css">
+{{/partial}}
+
+{{#partial "content"}}
+    <h1>Laputta intelligente!!  Mafianos seseli</h1>
+
+    <br><br>
+    {{#if heros}}
+        {{#each heros}}
+
+            <div class="card" style="width: 25rem;">
+                <div class="card-body">
+                    <h5 class="card-title"></h5>
+
+                    <p>Hero: {{name}}</p>
+                    <p>Age: {{age}}</p>
+                    <p>Strength: {{strength}}</p>
+                    <p>Weaknesses: {{weakness}}</p>
+
+                </div>
+            </div>
+        {{/each}}
+    {{else}}
+      <p>No hero has been added.</p>
+       <h4>Add your hero from the menu</h4>
+
+    {{/if}}
+{{/partial}}
+
+{{>layout.hbs}}

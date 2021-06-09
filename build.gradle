@@ -1,0 +1,35 @@
+plugins {
+    id 'java'
+    id 'application'
+}
+
+group 'org.example'
+version '1.0-SNAPSHOT'
+
+mainClassName = 'App'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+
+group 'com.moringa.heroes'
+version '1.0-SNAPSHOT'
+mainClassName = 'App'
+sourceCompatibility = 1.8
+repositories {
+    mavenCentral()
+}
+dependencies {
+    testImplementation group: 'junit', name: 'junit', version: '4.12'
+    implementation "com.sparkjava:spark-core:2.6.0"
+    implementation "com.sparkjava:spark-template-handlebars:2.5.5"
+   // implementation :sp"com.sparkjavaark-template-handlebars:2.5.5"
+    implementation 'org.slf4j:slf4j-simple:1.7.21'
+}
+applicationName = 'herosuldan-hero'
+archivesBaseName = "herosuldan-hero"
+defaultTasks = ['clean']
+task stage(dependsOn: ['clean', 'installDist'])

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{{#block "title"}}HroesLand{{/block}}</title>
+
+    <link rel='stylesheet' href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+
+<div class="color">
+    <ul class="nav nav-tabs">
+        <li role="presentation" class="active"><a href="/">Home</a></li>
+        <li role="presentation"><a href="/heros/new">Create a hero</a></li>
+        <li role="presentation"><a href="/squads/list">create a Squad</a></li>
+    </ul>
+    <div class="container">
+        <!--begin main template-->
+        <div class="page-header">
+
+            <h1>heaven race</h1>
+        </div>
+
+        <div class="col-md-12">
+            {{#block "content"}}
+            {{/block}}
+
+        </div>
+    </div>
+</div>
+<!--end main template-->
+{{#block "footer"}}
+
+    </body>
+    </html>
+{{/block}}
