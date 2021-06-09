@@ -4,7 +4,7 @@
 
 Author : Muhudin Abdi
 
-Contributors: Muhudin Abd
+Contributors: Muhudin Abdi
 
 ##Languages used:
 
