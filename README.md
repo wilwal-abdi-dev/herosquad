@@ -9,6 +9,6 @@ Contributors: Muhudin Abdi
 ##Languages used:
 
 1.JAVA
-2.Gradl
+2.Gradle
 3.Junit5
 
